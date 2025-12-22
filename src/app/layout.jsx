@@ -20,8 +20,8 @@ export default async function RootLayout({ children }) {
       <Head faviconGlyph="📘" />
       <body>
         <Layout
-          navbar={<Navbar logo={<strong>Doc Website</strong>} />}
-          footer={<Footer>Doc Website © {new Date().getFullYear()}</Footer>}
+          navbar={<Navbar logo={<strong>Microwiki</strong>} />}
+          footer={<Footer>Mircowiki © {new Date().getFullYear()}</Footer>}
           docsRepositoryBase="https://github.com/chenyansong/doc-website"
           editLink={null}
           sidebar={{ defaultMenuCollapseLevel: 1 }}
