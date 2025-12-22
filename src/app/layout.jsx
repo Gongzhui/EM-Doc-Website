@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/next'
 import { Footer, Layout, Navbar } from 'nextra-theme-docs'
 import { Head } from 'nextra/components'
 import { getPageMap } from 'nextra/page-map'
@@ -29,6 +30,7 @@ export default async function RootLayout({ children }) {
         >
           {children}
         </Layout>
+        <Analytics />
       </body>
     </html>
   )
