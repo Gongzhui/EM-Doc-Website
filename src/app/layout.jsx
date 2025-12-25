@@ -7,10 +7,10 @@ import 'katex/dist/katex.min.css'
 
 export const metadata = {
   title: {
-    template: '%s – Doc Website',
-    default: 'Doc Website'
+    template: '%s – Microwiki',
+    default: 'Microwiki'
   },
-  description: '使用 Nextra 构建的文档站点示例。'
+  description: '一个微波工程资料库。'
 }
 
 export default async function RootLayout({ children }) {
