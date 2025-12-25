@@ -1,0 +1,25 @@
+# Directivity, Gain, and Realized Gain
+
+## Directivity
+
+> Directivity $D$ is defined as the ratio of the power density at a far-field point in the direction of maximum radiation to the power density at the same point for an isotropic antenna with the same radiated power.
+> -- Antenna Theory and Techniques (2nd ed.), Zhong Shunshi
+
+The reference for directivity is **the same radiated power**. In other words, losses and mismatch are not considered.
+
+## Gain
+
+> Antenna gain is defined as the ratio of the power density at a far-field point in the direction of maximum radiation to the power density at the same point for an isotropic antenna with the same input power.
+> -- Antenna Theory and Techniques (2nd ed.), Zhong Shunshi
+
+The reference for gain is **the same input power**. That means losses are considered, but mismatch is not. The relationship between gain and directivity is:
+
+$$
+G=\eta D
+$$
+
+where $\eta$ is the antenna efficiency.
+
+## Realized Gain
+
+In HFSS, realized gain includes impedance mismatch compared to gain.
