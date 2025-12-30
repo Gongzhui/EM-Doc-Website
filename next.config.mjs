@@ -2,10 +2,14 @@ import nextra from 'nextra'
 
 const withNextra = nextra({
   defaultShowCopyCode: true,
-  contentDirBasePath: '/docs',
-  latex: true
+  latex: true,
+  unstable_shouldAddLocaleToLinks: true
 })
 
 export default withNextra({
-  reactStrictMode: true
+  reactStrictMode: true,
+  i18n: {
+    locales: ['zh', 'en'],
+    defaultLocale: 'zh'
+  }
 })
