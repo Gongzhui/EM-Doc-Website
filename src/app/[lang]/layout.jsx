@@ -11,6 +11,7 @@ export default async function LangLayout({ children, params }) {
       footer={<Footer>Mircowiki (c) {new Date().getFullYear()}</Footer>}
       docsRepositoryBase="https://github.com/chenyansong/doc-website"
       editLink={null}
+      feedback={{ link: 'https://github.com/Gongzhui/EM-Doc-Website/issues' }}
       sidebar={{ defaultMenuCollapseLevel: 1 }}
       pageMap={pageMap}
       i18n={[
