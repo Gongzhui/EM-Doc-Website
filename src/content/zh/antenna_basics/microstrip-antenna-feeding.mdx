@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { Callout } from 'nextra/components'
 
 # 微带天线
@@ -8,8 +7,7 @@ import { Callout } from 'nextra/components'
 <Image
   src="/images/docs/Microstrip%20Antenna-1.png"
   alt="微带天线的基本结构"
-  width={914}
-  height={530}
+  width={550}
 />
 
 如图所示，微带天线由辐射贴片、接地板和介质基板组成。辐射贴片可以有多种形状，最常用的有矩形、偶极子形和圆形等。
@@ -23,8 +21,7 @@ import { Callout } from 'nextra/components'
 <Image
   src="/images/docs/Microstrip%20antenna-2.png"
   alt="微带线馈电结构"
-  width={832}
-  height={502}
+  width={550}
 />
 
 如图所示，为微带线馈电的微带天线。这是一种简单、易于制造的馈电方式。图中可以看到，在贴片边缘开了一个槽口，将微带线伸进槽内进行馈电，这是为了**获得更好的阻抗匹配**。后文将会描述微带贴片的阻抗变化规律，即在中心处为零，两个边缘处阻抗最高。
@@ -42,8 +39,7 @@ import { Callout } from 'nextra/components'
 <Image
   src="/images/docs/Microstrip%20antenna-3.png"
   alt="同轴探针馈电结构"
-  width={788}
-  height={778}
+  width={550}
 />
 
 如图所示，为一个同轴探针馈电的圆形微带天线。同轴线分为内导体和外导体，内导体接辐射贴片，外导体接地板。
@@ -59,8 +55,7 @@ import { Callout } from 'nextra/components'
 <Image
   src="/images/docs/Microstrip%20antenna-4.png"
   alt="临近耦合馈电结构"
-  width={1200}
-  height={574}
+  width={550}
 />
 
 临近耦合馈电使用了 2 层介质基板。馈电微带线放置在下层基板上方，贴片放置在上层基板上方。这样的好处是分离了馈电和辐射结构，可以分别优化调整。比如，可以增加上层基板厚度的同时不影响馈电结构，也就不会增加杂散辐射。
@@ -70,8 +65,7 @@ import { Callout } from 'nextra/components'
 <Image
   src="/images/docs/Microstrip%20Antenna-5.png"
   alt="口径耦合馈电结构"
-  width={1456}
-  height={678}
+  width={550}
 />
 
 上图为口径耦合馈电的示意图。共有两层介质，中间夹着接地板。上层介质的表面为辐射贴片，下层介质的底面为馈电的微带线，微带线的能量通过接地板上开的槽耦合到辐射贴片上。通常情况下，下层介质的介电常数较高，上层介质的介电常数较低。中间的接地板能够防止杂散辐射，因为隔离了馈电结构。

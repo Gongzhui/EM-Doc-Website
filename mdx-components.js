@@ -1,21 +1,11 @@
-import { Image } from 'nextra/components'
 import { useMDXComponents as getDocsMDXComponents } from 'nextra-theme-docs'
+import { DocImage } from './src/components/doc-image'
 
 const docsComponents = getDocsMDXComponents()
-const centeredImg = props => (
-  <Image
-    {...props}
-    style={{
-      display: 'block',
-      marginLeft: 'auto',
-      marginRight: 'auto',
-      ...(props.style || {})
-    }}
-  />
-)
 
 export const useMDXComponents = components => ({
   ...docsComponents,
-  img: centeredImg,
+  img: DocImage,
+  Image: DocImage,
   ...components
 })
