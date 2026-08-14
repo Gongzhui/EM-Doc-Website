@@ -2,8 +2,7 @@ import Link from 'next/link';
 
 const zh = {
   title: '公开笔记',
-  lede: '电磁、仿真，以及其他正在写的题目。',
-  proof: '按题目查。正式入口 wiki.gongzhui.me。',
+  lede: '一个小小的知识库。',
   groups: [
     {
       heading: 'HFSS',
@@ -77,7 +76,9 @@ export function HomeOpening({ locale = 'zh' }: { locale?: string }) {
           <h1 className="text-4xl font-semibold tracking-tight text-fd-foreground">{copy.title}</h1>
           <p className="max-w-xl text-lg text-fd-muted-foreground">{copy.lede}</p>
         </div>
-        <p className="text-sm leading-6 text-fd-muted-foreground md:text-right">{copy.proof}</p>
+        {'proof' in copy && copy.proof ? (
+          <p className="text-sm leading-6 text-fd-muted-foreground md:text-right">{copy.proof}</p>
+        ) : null}
       </section>
       <section className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
         {copy.groups.map((group) => (
