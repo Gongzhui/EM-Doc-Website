@@ -5,8 +5,8 @@ import 'katex/dist/katex.min.css'
 
 export const metadata = {
   title: {
-    template: '%s – Microwiki',
-    default: 'Microwiki'
+    template: '%s – EM',
+    default: 'EM'
   },
   description: '一个微波工程资料库。'
 }

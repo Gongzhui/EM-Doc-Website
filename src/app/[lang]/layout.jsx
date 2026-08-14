@@ -7,9 +7,9 @@ export default async function LangLayout({ children, params }) {
 
   return (
     <Layout
-      navbar={<Navbar logo={<strong>Microwiki</strong>} />}
-      footer={<Footer>Mircowiki (c) {new Date().getFullYear()}</Footer>}
-      docsRepositoryBase="https://github.com/chenyansong/doc-website"
+      navbar={<Navbar logo={<strong>EM</strong>} />}
+      footer={<Footer>EM (c) {new Date().getFullYear()}</Footer>}
+      docsRepositoryBase="https://github.com/Gongzhui/EM-Doc-Website"
       editLink={null}
       feedback={{ link: 'https://github.com/Gongzhui/EM-Doc-Website/issues' }}
       sidebar={{ defaultMenuCollapseLevel: 1 }}
