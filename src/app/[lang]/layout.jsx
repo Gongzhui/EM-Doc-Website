@@ -1,4 +1,5 @@
 import { Footer, Layout, Navbar } from 'nextra-theme-docs'
+import { Search } from 'nextra/components'
 import { getPageMap } from 'nextra/page-map'
 
 export default async function LangLayout({ children, params }) {
@@ -26,12 +27,17 @@ export default async function LangLayout({ children, params }) {
       feedback={{ content: null }}
       copyPageButton={false}
       darkMode={false}
+      toc={{
+        title: 'On this page',
+        backToTop: null
+      }}
       nextThemes={{
         attribute: 'class',
         defaultTheme: 'system',
         disableTransitionOnChange: true
       }}
       sidebar={{ defaultMenuCollapseLevel: 1 }}
+      search={<Search placeholder="Search Docs…" />}
       pageMap={pageMap}
       i18n={[
         { locale: 'zh', name: '中文' },

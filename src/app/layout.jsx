@@ -34,9 +34,12 @@ export default function RootLayout({ children }) {
       dir="ltr"
       suppressHydrationWarning
       data-theme="auto"
-      className={`vbg-report ${geistSans.variable} ${geistMono.variable}`}
+      className={`${geistSans.className} ${geistSans.variable} ${geistMono.variable} vbg-report`}
     >
-      <Head />
+      <Head
+        color={{ hue: 0, saturation: 0, lightness: { light: 12, dark: 94 } }}
+        backgroundColor={{ light: '#ffffff', dark: '#000000' }}
+      />
       <body>
         {children}
         <Analytics />
