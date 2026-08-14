@@ -1,0 +1,183 @@
+/* Page-owned restyle of Nextra chrome onto the Vercel report tokens.
+   Do not target or restyle published .vbg-* primitives. */
+
+.em-identity {
+  color: var(--vbg-text-primary);
+  font-family: var(--vbg-font-sans);
+  font-size: var(--vbg-type-compact);
+  font-weight: var(--vbg-weight-medium);
+  letter-spacing: -0.04em;
+  line-height: var(--vbg-leading-compact);
+}
+
+.em-footer-inner {
+  display: flex;
+  width: 100%;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--vbg-space-6);
+  color: var(--vbg-text-secondary);
+  font-size: var(--vbg-type-metadata);
+  line-height: var(--vbg-leading-caption);
+}
+
+.em-footer-meta {
+  text-align: end;
+}
+
+.em-home {
+  width: min(calc(100% - 48px), var(--vbg-content-width));
+  margin-inline: auto;
+  padding-block: clamp(40px, 7vw, 80px);
+}
+
+.em-home a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+}
+
+.em-home a:hover {
+  color: var(--vbg-text-primary);
+}
+
+.em-stack-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.em-stack-list > li + li {
+  margin-block-start: var(--vbg-space-2);
+}
+
+.em-stack-list a {
+  color: var(--vbg-text-secondary);
+  text-decoration: none;
+}
+
+.em-stack-list a:hover {
+  color: var(--vbg-text-primary);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+html.vbg-report {
+  background: var(--vbg-background-100);
+  color: var(--vbg-text-primary);
+}
+
+html.vbg-report body {
+  min-height: 100dvh;
+  background: var(--vbg-background-100);
+  color: var(--vbg-text-primary);
+  font-family: var(--vbg-font-sans);
+  font-feature-settings: "rlig" 1, "calt" 0, "ss11" 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+html.vbg-report :is(code, kbd, samp, pre, .nextra-code) {
+  font-family: var(--vbg-font-mono);
+}
+
+html.vbg-report article {
+  max-width: var(--vbg-reading-width);
+  color: var(--vbg-text-primary);
+  font-size: var(--vbg-type-body);
+  line-height: var(--vbg-leading-body);
+}
+
+html.vbg-report article :is(h1, h2, h3, h4) {
+  color: var(--vbg-text-primary);
+  font-weight: var(--vbg-weight-heading);
+  letter-spacing: -0.04em;
+  text-wrap: balance;
+}
+
+html.vbg-report article a {
+  color: var(--vbg-text-primary);
+  text-underline-offset: 0.18em;
+}
+
+html.vbg-report :is(nav, aside, footer) {
+  background: var(--vbg-background-100);
+  border-color: var(--vbg-border-subtle);
+  color: var(--vbg-text-primary);
+}
+
+html.vbg-report aside a {
+  color: var(--vbg-text-secondary);
+  border-radius: var(--vbg-radius-small);
+}
+
+html.vbg-report aside a:hover,
+html.vbg-report aside a[aria-current="page"],
+html.vbg-report aside a[aria-selected="true"] {
+  background: var(--vbg-gray-alpha-100);
+  color: var(--vbg-text-primary);
+}
+
+html.vbg-report pre,
+html.vbg-report :not(pre) > code {
+  background: var(--vbg-surface-secondary);
+  border-color: var(--vbg-border-subtle);
+  border-radius: var(--vbg-radius-small);
+  color: var(--vbg-text-primary);
+}
+
+html.vbg-report :not(pre) > code {
+  font-size: 0.9em;
+  padding: 0.1em 0.35em;
+}
+
+html.vbg-report blockquote,
+html.vbg-report .nextra-callout {
+  background: transparent;
+  border: 0;
+  border-inline-start: 1px solid var(--vbg-border-strong);
+  border-radius: 0;
+  color: var(--vbg-text-secondary);
+}
+
+html.vbg-report table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--vbg-type-body);
+}
+
+html.vbg-report :is(th, td) {
+  border-bottom: 1px solid var(--vbg-border-subtle);
+  padding: var(--vbg-space-3) 0;
+  text-align: start;
+  vertical-align: baseline;
+}
+
+html.vbg-report th {
+  color: var(--vbg-text-secondary);
+  font-size: var(--vbg-type-label);
+  font-weight: var(--vbg-weight-regular);
+}
+
+html.vbg-report hr {
+  border: 0;
+  border-block-start: 1px solid var(--vbg-border-subtle);
+}
+
+html.vbg-report ::selection {
+  background: var(--vbg-gray-alpha-400);
+}
+
+html.vbg-report :focus-visible {
+  outline: 2px solid var(--vbg-focus);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.vbg-report *,
+  html.vbg-report *::before,
+  html.vbg-report *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

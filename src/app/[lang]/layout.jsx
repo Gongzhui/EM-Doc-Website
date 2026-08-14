@@ -7,11 +7,30 @@ export default async function LangLayout({ children, params }) {
 
   return (
     <Layout
-      navbar={<Navbar logo={<strong>EM</strong>} />}
-      footer={<Footer>EM (c) {new Date().getFullYear()}</Footer>}
+      navbar={
+        <Navbar
+          logo={<span className="em-identity">EM</span>}
+          logoLink={`/${lang}`}
+        />
+      }
+      footer={
+        <Footer>
+          <span className="em-footer-inner">
+            <span className="em-identity">EM</span>
+            <span className="em-footer-meta">Microwave notes</span>
+          </span>
+        </Footer>
+      }
       docsRepositoryBase="https://github.com/Gongzhui/EM-Doc-Website"
       editLink={null}
-      feedback={{ link: 'https://github.com/Gongzhui/EM-Doc-Website/issues' }}
+      feedback={{ content: null }}
+      copyPageButton={false}
+      darkMode={false}
+      nextThemes={{
+        attribute: 'class',
+        defaultTheme: 'system',
+        disableTransitionOnChange: true
+      }}
       sidebar={{ defaultMenuCollapseLevel: 1 }}
       pageMap={pageMap}
       i18n={[
