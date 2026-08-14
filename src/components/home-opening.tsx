@@ -1,6 +1,16 @@
 import Link from 'next/link';
 
-const zh = {
+type HomeCopy = {
+  title: string;
+  lede: string;
+  proof?: string;
+  groups: {
+    heading: string;
+    items: { href: string; label: string }[];
+  }[];
+};
+
+const zh: HomeCopy = {
   title: '公开笔记',
   lede: '一个小小的知识库。',
   groups: [
@@ -41,7 +51,7 @@ const zh = {
   ]
 };
 
-const en = {
+const en: HomeCopy = {
   title: 'Notes',
   lede: 'Electromagnetics, simulation, and other notes as they are written.',
   proof: 'Most notes are in Chinese. The public site is wiki.gongzhui.me.',
@@ -76,7 +86,7 @@ export function HomeOpening({ locale = 'zh' }: { locale?: string }) {
           <h1 className="text-4xl font-semibold tracking-tight text-fd-foreground">{copy.title}</h1>
           <p className="max-w-xl text-lg text-fd-muted-foreground">{copy.lede}</p>
         </div>
-        {'proof' in copy && copy.proof ? (
+        {copy.proof ? (
           <p className="text-sm leading-6 text-fd-muted-foreground md:text-right">{copy.proof}</p>
         ) : null}
       </section>
