@@ -34,6 +34,10 @@ export function baseOptions(locale: string): BaseLayoutProps {
     links: isZh
       ? [
           {
+            text: '网址导航',
+            url: '/zh/links'
+          },
+          {
             text: 'HFSS',
             url: '/zh/hfss/far-fields-report-sweep'
           },

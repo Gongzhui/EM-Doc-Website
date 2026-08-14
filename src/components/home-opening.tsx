@@ -15,6 +15,10 @@ const zh: HomeCopy = {
   lede: '一个小小的知识库。',
   groups: [
     {
+      heading: '网址导航',
+      items: [{ href: '/zh/links', label: 'inspora.design' }]
+    },
+    {
       heading: 'HFSS',
       items: [
         { href: '/zh/hfss/far-fields-report-sweep', label: 'Far Fields Report 扫参' },
@@ -70,7 +74,8 @@ const en: HomeCopy = {
       items: [
         { href: '/zh/hfss/far-fields-report-sweep', label: 'HFSS' },
         { href: '/zh/CST/export-data', label: 'CST' },
-        { href: '/zh/books', label: 'Books and software' }
+        { href: '/zh/books', label: 'Books and software' },
+        { href: '/zh/links', label: '网址导航' }
       ]
     }
   ]
@@ -90,7 +95,7 @@ export function HomeOpening({ locale = 'zh' }: { locale?: string }) {
           <p className="text-sm leading-6 text-fd-muted-foreground md:text-right">{copy.proof}</p>
         ) : null}
       </section>
-      <section className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+      <section className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
         {copy.groups.map((group) => (
           <div key={group.heading} className="space-y-3">
             <h2 className="text-sm font-medium text-fd-foreground">{group.heading}</h2>
