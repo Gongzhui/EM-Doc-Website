@@ -1,6 +1,6 @@
-# EM
+# Gongzhui Wiki
 
-个人微波工程笔记，地址 [em.gongzhui.me](https://em.gongzhui.me)。
+公开笔记，地址 [wiki.gongzhui.me](https://wiki.gongzhui.me)。
 
 栈是 Next.js + Fumadocs，中英双语。正文在 `content/docs/`。
 

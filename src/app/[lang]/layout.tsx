@@ -18,10 +18,10 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    template: '%s – EM',
-    default: 'EM'
+    template: '%s – Gongzhui',
+    default: 'Gongzhui Wiki'
   },
-  description: '一个微波工程资料库。',
+  description: 'Gongzhui 的公开笔记。',
   icons: {
     icon: '/favicon.svg?v=2'
   }

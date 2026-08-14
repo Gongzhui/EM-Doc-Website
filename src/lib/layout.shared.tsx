@@ -25,7 +25,7 @@ export function baseOptions(locale: string): BaseLayoutProps {
       title: (
         <>
           <Logo className="size-5" />
-          EM
+          Gongzhui
         </>
       ),
       url: `/${locale}`

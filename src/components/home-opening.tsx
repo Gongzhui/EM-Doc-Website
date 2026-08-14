@@ -1,9 +1,9 @@
 import Link from 'next/link';
 
 const zh = {
-  title: '微波工程笔记',
-  lede: '天线基础、HFSS 与 CST 的操作记录，以及书和软件入口。',
-  proof: '公开笔记，按题目查，不按课程表读。',
+  title: '公开笔记',
+  lede: '电磁、仿真，以及其他正在写的题目。',
+  proof: '按题目查。正式入口 wiki.gongzhui.me。',
   groups: [
     {
       heading: 'HFSS',
@@ -43,9 +43,9 @@ const zh = {
 };
 
 const en = {
-  title: 'Microwave notes',
-  lede: 'Antenna fundamentals, HFSS and CST working notes, plus books and software.',
-  proof: 'Most notes are in Chinese. English pages are added as they exist.',
+  title: 'Notes',
+  lede: 'Electromagnetics, simulation, and other notes as they are written.',
+  proof: 'Most notes are in Chinese. The public site is wiki.gongzhui.me.',
   groups: [
     {
       heading: 'Antenna',
