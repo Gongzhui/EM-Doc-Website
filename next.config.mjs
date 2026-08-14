@@ -1,15 +1,10 @@
-import nextra from 'nextra'
+import { createMDX } from 'fumadocs-mdx/next';
 
-const withNextra = nextra({
-  defaultShowCopyCode: true,
-  latex: true,
-  unstable_shouldAddLocaleToLinks: true
-})
+const withMDX = createMDX();
 
-export default withNextra({
-  reactStrictMode: true,
-  i18n: {
-    locales: ['zh', 'en'],
-    defaultLocale: 'zh'
-  }
-})
+/** @type {import('next').NextConfig} */
+const config = {
+  reactStrictMode: true
+};
+
+export default withMDX(config);

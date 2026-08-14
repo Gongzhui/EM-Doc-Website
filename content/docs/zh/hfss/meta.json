@@ -1,0 +1,11 @@
+{
+  "title": "HFSS",
+  "pages": [
+    "far-fields-report-sweep",
+    "coax-feeding-notes",
+    "create-surface-from-closed-curve",
+    "skip-validation-steps",
+    "field-calculator-guide",
+    "wave-port-degenerate-modes"
+  ]
+}
