@@ -1,3 +1,4 @@
+import { Logo } from '@/components/logo';
 import { zhCN } from '@fumadocs/language/zh-cn';
 import { i18n } from '@/lib/i18n';
 import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
@@ -21,7 +22,12 @@ export function baseOptions(locale: string): BaseLayoutProps {
 
   return {
     nav: {
-      title: 'EM',
+      title: (
+        <>
+          <Logo className="size-5" />
+          EM
+        </>
+      ),
       url: `/${locale}`
     },
     githubUrl: 'https://github.com/Gongzhui/EM-Doc-Website',

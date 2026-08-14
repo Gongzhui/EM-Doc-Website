@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   description: '一个微波工程资料库。',
   icons: {
-    icon: '/favicon.svg'
+    icon: '/favicon.svg?v=2'
   }
 };
 
