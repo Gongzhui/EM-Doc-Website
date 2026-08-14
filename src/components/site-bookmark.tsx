@@ -14,7 +14,7 @@ export function SiteBookmark({
   icon
 }: SiteBookmarkProps) {
   return (
-    <article className="not-prose my-8 max-w-3xl">
+    <article className="not-prose max-w-3xl">
       <a
         href={href}
         target="_blank"

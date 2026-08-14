@@ -16,7 +16,7 @@ const zh: HomeCopy = {
   groups: [
     {
       heading: '网址导航',
-      items: [{ href: '/zh/links', label: 'inspora.design' }]
+      items: [{ href: '/zh/links', label: '设计' }]
     },
     {
       heading: 'HFSS',
