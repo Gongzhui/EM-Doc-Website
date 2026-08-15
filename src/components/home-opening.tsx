@@ -15,12 +15,11 @@ const zh: HomeCopy = {
   lede: '一个小小的知识库。',
   groups: [
     {
-      heading: '论文伴读',
-      items: [{ href: 'https://paper.gongzhui.me', label: '书架' }]
-    },
-    {
       heading: '网址导航',
-      items: [{ href: '/zh/links', label: '设计' }]
+      items: [
+        { href: '/zh/links', label: '设计' },
+        { href: '/zh/links#知识', label: '知识' }
+      ]
     },
     {
       heading: 'HFSS',
@@ -79,8 +78,7 @@ const en: HomeCopy = {
         { href: '/zh/hfss/far-fields-report-sweep', label: 'HFSS' },
         { href: '/zh/CST/export-data', label: 'CST' },
         { href: '/zh/books', label: 'Books and software' },
-        { href: '/zh/links', label: '网址导航' },
-        { href: 'https://paper.gongzhui.me', label: '论文伴读' }
+        { href: '/zh/links', label: '网址导航' }
       ]
     }
   ]
@@ -106,7 +104,7 @@ export function HomeOpening({ locale = 'zh' }: { locale?: string }) {
             <h2 className="text-sm font-medium text-fd-foreground">{group.heading}</h2>
             <ul className="space-y-2 text-sm">
               {group.items.map((item) => (
-                <li key={item.href}>
+                <li key={`${item.href}-${item.label}`}>
                   <Link href={item.href} className="text-fd-muted-foreground hover:text-fd-foreground">
                     {item.label}
                   </Link>

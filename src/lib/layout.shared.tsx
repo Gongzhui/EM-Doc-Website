@@ -38,11 +38,6 @@ export function baseOptions(locale: string): BaseLayoutProps {
             url: '/zh/links'
           },
           {
-            text: '论文伴读',
-            url: 'https://paper.gongzhui.me',
-            external: true
-          },
-          {
             text: 'HFSS',
             url: '/zh/hfss/far-fields-report-sweep'
           },
@@ -60,11 +55,6 @@ export function baseOptions(locale: string): BaseLayoutProps {
           }
         ]
       : [
-          {
-            text: 'Paper',
-            url: 'https://paper.gongzhui.me',
-            external: true
-          },
           {
             text: 'Antenna',
             url: '/en/antenna-basics/directivity-gain'
