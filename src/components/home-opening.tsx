@@ -18,7 +18,8 @@ const zh: HomeCopy = {
       heading: '网址导航',
       items: [
         { href: '/zh/links', label: '设计' },
-        { href: '/zh/links#知识', label: '知识' }
+        { href: '/zh/links#知识', label: '知识' },
+        { href: '/zh/links#AI', label: 'AI' }
       ]
     },
     {

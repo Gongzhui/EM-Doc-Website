@@ -57,15 +57,23 @@ if (!url || !outfile) {
 
 const outPath = resolve(outfile);
 
-const browser = await chromium.launch({
-  headless: true
-});
+async function launchBrowser() {
+  try {
+    return await chromium.launch({ channel: 'chrome', headless: true });
+  } catch {
+    return await chromium.launch({ headless: true });
+  }
+}
+
+const browser = await launchBrowser();
 
 const page = await browser.newPage({
   viewport: { width: 1440, height: 900 },
   deviceScaleFactor: 2,
   colorScheme: 'light',
-  reducedMotion: 'reduce'
+  reducedMotion: 'reduce',
+  userAgent:
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36'
 });
 
 await page.emulateMedia({ reducedMotion: 'reduce' });
