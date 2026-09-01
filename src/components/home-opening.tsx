@@ -23,6 +23,15 @@ const zh: HomeCopy = {
       ]
     },
     {
+      heading: '文章分享',
+      items: [
+        {
+          href: '/zh/article_shares/grok-bot-for-engineering',
+          label: '用 Grok Bot 做工程'
+        }
+      ]
+    },
+    {
       heading: 'HFSS',
       items: [
         { href: '/zh/hfss/far-fields-report-sweep', label: 'Far Fields Report 扫参' },
