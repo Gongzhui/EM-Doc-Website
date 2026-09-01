@@ -2,7 +2,7 @@ type SiteBookmarkProps = {
   href: string;
   title: string;
   description?: string;
-  preview: string;
+  preview?: string;
   icon?: string;
 };
 
@@ -29,11 +29,13 @@ export function SiteBookmark({
       {description ? (
         <p className="mb-3 text-sm text-fd-muted-foreground">{description}</p>
       ) : null}
-      <img
-        src={preview}
-        alt={`${title} 首页预览`}
-        className="w-full rounded-lg border border-fd-border"
-      />
+      {preview ? (
+        <img
+          src={preview}
+          alt={`${title} 首页预览`}
+          className="w-full rounded-lg border border-fd-border"
+        />
+      ) : null}
     </article>
   );
 }
