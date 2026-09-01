@@ -38,6 +38,10 @@ export function baseOptions(locale: string): BaseLayoutProps {
             url: '/zh/links'
           },
           {
+            text: '文章分享',
+            url: '/zh/article_shares/grok-bot-for-engineering'
+          },
+          {
             text: 'HFSS',
             url: '/zh/hfss/far-fields-report-sweep'
           },
