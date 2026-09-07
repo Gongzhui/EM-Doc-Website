@@ -1,0 +1,43 @@
+---
+title: 新人学习路径
+description: 天线入门：先软件和理论，再指定论文，再自己做。
+---
+
+先会软件和理论，再把指定论文看懂，再自己做。
+
+1. 熟悉软件操作
+2. 读钟顺时两本书打理论
+3. 用李明洋的 HFSS 书把仿真跑起来
+4. 看懂下面列出的论文
+5. 上手复现 SIW / ME-dipole，再到透射阵、反射阵练习
+
+书可以在 [书籍推荐](/zh/books) 里找。
+
+## 书
+
+1. 钟顺时《天线理论与技术》：天线理论基础
+2. 钟顺时《微带天线理论与应用》：微带和贴片；后面做 60 GHz ME-dipole 时对照这两本
+3. 李明洋《HFSS 天线设计》：先看第 1–3 章，仿做 **3.2、3.3**，再看第 4 章
+
+## 论文
+
+按这个顺序看，要求看懂：
+
+1. K. B. Ng, H. Wong, K. K. So, C. H. Chan, K. M. Luk, [60 GHz Plated Through Hole Printed Magneto-Electric Dipole Antenna](https://doi.org/10.1109/TAP.2012.2196916), IEEE TAP, 2012. 第一篇，先看懂。
+2. M. Li, K.-M. Luk, [Wideband Magneto-Electric Dipole Antenna for 60-GHz Millimeter-Wave Communications](https://doi.org/10.1109/TAP.2015.2425418), IEEE TAP, 2015. L 型探针馈电的 ME-dipole。
+3. F. Wu, L. Xiang, J. Wang, K.-M. Luk, W. Hong, [A Hybrid-Element Approach to Design Wideband ME-Dipole Transmitarray With Improved Aperture Efficiency](https://doi.org/10.1109/LAWP.2022.3167284), IEEE AWPL, 2022. 异构单元透射阵。
+4. K. M. Luk, H. Wong, [A New Wideband Unidirectional Antenna Element](https://www.ijmot.com/ijmot/uploaded/fJAl1POcc7.pdf), IJMOT, 2006. 磁电偶极子奠基文，看懂公式。
+5. F. Wu, J. Wang, R. Lü, X. Xia, W. Hong, K.-M. Luk, [Wideband and Low Cross-Polarization Transmitarray Using 1 Bit Magnetoelectric Dipole Elements](https://doi.org/10.1109/TAP.2020.3026904), IEEE TAP, 2021. L 探针馈电的 1-bit 透射阵，看懂后按这篇做。
+
+## 上手
+
+书上的练习：
+
+- 《HFSS 天线设计》3.2、3.3，做完再进第 4 章
+
+结构练习：
+
+- SIW 60 GHz ME-dipole（对照钟顺时两本书）
+- SIW–ME 32 GHz
+- 反射阵延迟线
+- 按 2021 TAP 那篇 1-bit ME 透射阵上手做
